@@ -1,0 +1,124 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+body {
+  background-color: #6a0dad;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.registration-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 3px solid #fff;
+  border-color: #333;
+  border-radius: 12px;
+  background-color: #f6f8f4;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.registration-form-container h2 {
+  text-align: center;
+  color: #4a148c;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #6a0dad;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(106, 13, 173, 0.2);
+}
+
+.input-error {
+  border-color: #e63946 !important;
+}
+
+.error-message {
+  color: #e63946;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.password-input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+.password-input-container input {
+  flex-grow: 1;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.password-toggle-button {
+  background: transparent;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  color: #6a0dad;
+  font-weight: bold;
+}
+
+.phone-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-input-group select {
+  width: 120px;
+}
+
+.phone-input-group input {
+  flex-grow: 1;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px 20px;
+  background-color: #6a0dad;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover:not(:disabled) {
+  background-color: #4a0a8d;
+}
+
+button[type="submit"]:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
